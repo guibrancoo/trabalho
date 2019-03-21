@@ -1,10 +1,9 @@
-function iniciarBusca(){
-    if(document.getElementById("numcartao").value == 12341234){
-        alert('Cartão encontrado! Dados exibidos abaixo...');
-        var div = document.querySelector('.cartao');
-        div.innerHTML = "Cartão: " + document.getElementById("numcartao").value + "<br>Nome: GUILHERME D B PIRES" + "<br>CVV: 001" + "<br>Validade: 02/24";
-    }else{
-        alert('Cartão não encontrado! Tente novamente...');
-        window.location.reload(); //Recarrega a página para que os dados não sejam mantidos
-    }
-}
+document.querySelector('#limpar').style.display = "none";
+// document.querySelector('#numero').insertBefore("Nº do cartão:", before);
+document.getElementById('meuH1').innerHTML = "Exibir dados do cartão";
+document.getElementById('pesquisar').innerHTML = "Pesquisar cartão";
+document.getElementById('limpar').innerHTML = "Limpar";
+document.querySelector("body > h1 + form > p")
+    .innerHTML = "Nº do cartão:";
+
+document.forms.form.addEventListener("submit", iniciarBusca); //Função que ao enviar o form(submit), chama a função iniciarBusca

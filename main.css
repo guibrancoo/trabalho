@@ -1,0 +1,45 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+h1{
+    background-color: #8a05be;
+    text-align: center;
+    /*margin: 0;*/
+    padding: 10px 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+#pesquisar, #limpar {
+    padding: 10px;
+    /*display: block;*/
+    color: #fff;
+    background-color: #8a05be;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+#dados{
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+#pesquisar:hover, #limpar:hover{
+    background-color: #3c0056;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}

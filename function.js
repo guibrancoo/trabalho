@@ -38,3 +38,10 @@ function iniciarBusca(e){
 }
 
 document.forms.form.addEventListener("submit", iniciarBusca); //Função que ao enviar o form(submit), chama a função iniciarBusca
+
+function limparTela(){
+    document.querySelector('#cartao').style.display = "none";
+    document.querySelector('#dados').style.display = "none";
+    document.querySelector('#limpar').style.display = "none";
+    window.location.reload();
+}
